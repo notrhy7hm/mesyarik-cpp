@@ -1,0 +1,8 @@
+#include <iostream>
+
+template <typename T>
+void g() {}
+
+template <typename T>
+void f() noexcept(noexcept(g<T>())) {
+}

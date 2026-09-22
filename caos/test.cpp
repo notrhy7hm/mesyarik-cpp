@@ -1,7 +1,10 @@
 #include <iostream>
+#include <unistd.h>
 
 int main() {
-    int x;
-    std::cin >> x;
-    std::cout << x + 5 << '\n';
+    
+    for (int i = 0; i < 1000; ++i) {
+        std::cout << i << ' ';
+    }
+    _exit(0);
 }
